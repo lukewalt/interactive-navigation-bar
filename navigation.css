@@ -26,16 +26,23 @@ header {
 .nav-items a {
   text-decoration: none;
   display: block;
+  text-align: center;
+  width: 5em;
   padding: 1em;
   padding-bottom: 1.3em;
   color: white;
-  font-family: sans-serif;
+  font-family: sans-serif, serif;
 }
 
 .nav-items a:hover {
   background: lightgreen;
   color: darkgreen;
 }
+
+.nav-items a:focus {
+  width: 7em;
+}
+
 
 
 /*<------------------- Main Nav Media Queries ------------------->*/
@@ -58,10 +65,10 @@ header {
     padding: 10px;
     border-top: 1px solid rgba(255,255,255,0.3);
     border-bottom: 1px solid rgba(0,0,0,0.1);
+    width: auto;
   }
 
-
-  .navigation li:last-of-type a {
-    border-bottom: none;
+  .nav-items a:focus {
+    width: 7em;
   }
 }
